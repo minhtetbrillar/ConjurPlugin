@@ -15,8 +15,10 @@ Tools required:
 - jdk 8
 - mvn
 
-Navigate into the `dev` directory and run `docker-compose up -d`. This will start a Conjur instance and TeamCity server and agent.
 
+Navigate into the `dev` directory and execute the following:
+- [Conjur installation](https://github.com/cyberark/conjur-quickstart/blob/master/test_workflow.sh)
+- Setup TeamCity: `docker-compose up -d`
 
 ## Testing
 To run unit tests execute the following:
