@@ -17,6 +17,7 @@ by CyberArk**. For more detailed information on our certification levels, see [o
 Download the TeamCity plugin from [here](https://github.com/cyberark/conjur-teamcity-plugin/releases).
 
 Install the TeamCity plugin in the administration settings:
+
 ![Conjur plugin](docs/plugin-load.png)
 
 
