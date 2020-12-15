@@ -1,8 +1,4 @@
 # Contributing
-
-[Are you accepting contributions at this time? If not, please state that here.
-No need to include content from the rest of this document.]
-
 For general contribution and community guidelines, please see the [community repo](https://github.com/cyberark/community).
 
 ## Table of Contents
@@ -13,19 +9,25 @@ For general contribution and community guidelines, please see the [community rep
 - [Contributing](#contributing-workflow)
 
 ## Development
+Tools required:
+- docker
+- docker-compose
+- jdk 8
+- mvn
 
-TODO:
-[What development tools are required to start working on this project?]
+
+Navigate into the `dev` directory and execute the following:
+- [Conjur installation](https://github.com/cyberark/conjur-quickstart/blob/master/test_workflow.sh)
+- Setup TeamCity: `docker-compose up -d`
 
 ## Testing
-
-TODO:
-[Instructions for running the test suite]
+To run unit tests execute the following:
+```bash
+mvn test
+```
 
 ## Releases
-
-TODO:
-[Instructions for creating a new release]
+To create a new release in this project, follow the standard [release guidelines](https://github.com/cyberark/community/blob/master/Conjur/CONTRIBUTING.md#release-process).
 
 ## Contributing workflow
 
