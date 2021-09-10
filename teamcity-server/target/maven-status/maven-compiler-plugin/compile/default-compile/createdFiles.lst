@@ -1,0 +1,3 @@
+com\cyberark\server\ConjurBuildStartContextProcessor.class
+com\cyberark\server\ConjurPropertiesProcessor.class
+com\cyberark\server\ConjurProjectConnectionProvider.class

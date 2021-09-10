@@ -2,7 +2,7 @@
 <teamcity-plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:schemas-jetbrains-com:teamcity-plugin-v1-xml">
   <info>
     <name>teamcity-conjur-support</name>
-    <display-name>Cyberark Conjur Support</display-name>
+    <display-name>Cyberark Conjur Support:v3</display-name>
     <version>@Version@</version>
     <description>Provides support for Cyberark Conjur Secrets Manager</description>
     <download-url>https://github.com/cyberark/conjur-teamcity-plugin/releases</download-url>

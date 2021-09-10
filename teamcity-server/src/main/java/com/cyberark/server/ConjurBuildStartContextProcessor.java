@@ -6,6 +6,10 @@ import com.cyberark.common.exceptions.MultipleConnectionsReturnedException;
 import jetbrains.buildServer.BuildProblemData;
 import jetbrains.buildServer.serverSide.*;
 import jetbrains.buildServer.serverSide.oauth.OAuthConstants;
+import jetbrains.buildServer.serverSide.buildLog.*;
+import jetbrains.buildServer.messages.Status;
+import jetbrains.buildServer.log.*;
+import jetbrains.buildServer.serverSide.buildLog.*;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManagerFactory;
@@ -19,7 +23,7 @@ import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.util.*;
-
+import com.intellij.openapi.diagnostic.Logger;
 import com.cyberark.common.*;
 
 public class ConjurBuildStartContextProcessor implements BuildStartContextProcessor {
@@ -56,7 +60,8 @@ public class ConjurBuildStartContextProcessor implements BuildStartContextProces
     @Override
     public void updateParameters(BuildStartContext context) {
         SRunningBuild build = context.getBuild();
-
+        Logger logger = Loggers.SERVER;
+        logger.info("gglog3 from start context processor");
         SBuildType buildType = build.getBuildType();
         if (buildType == null) {
             // It is possible of build type to be null, if this is the case lets return and not retrieve conjur secrets

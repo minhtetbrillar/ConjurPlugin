@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamcity-plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:schemas-jetbrains-com:teamcity-plugin-v1-xml">
+  <info>
+    <name>teamcity-conjur-support</name>
+    <display-name>Cyberark Conjur Support:v3</display-name>
+    <version>v0.0.1</version>
+    <description>Provides support for Cyberark Conjur Secrets Manager</description>
+    <download-url>https://github.com/cyberark/conjur-teamcity-plugin/releases</download-url>
+    <email>conj_maintainers@cyberark.com</email>
+    <vendor>
+      <name>Cyberark</name>
+      <url>https://cyberark.com</url>
+      <logo>https://github.com/cyberark/conjur/blob/master/docs/img/cybr_icon_sq.svg</logo>
+    </vendor>
+  </info>
+  <deployment use-separate-classloader="true"/>
+</teamcity-plugin>

@@ -1,12 +1,12 @@
-version: "3"
+version: '3'
 services:
   teamcity-server:
     image: jetbrains/teamcity-server
     volumes:
-      - ${HOME}/tmp/teamcity/data:/data/teamcity_server/datadir 
+      - ${HOME}/tmp/teamcity/data:/data/teamcity_server/datadir
       - ${HOME}/tmp/teamcity/logs:/opt/teamcity/logs
     ports:
-      - "8111:8111"
+      - '8111:8111'
     networks:
       teamcity-network:
         aliases:
@@ -15,13 +15,13 @@ services:
   teamcity-agent:
     image: jetbrains/teamcity-agent
     environment:
-      SERVER_URL: "http://teamcity-server:8111"
+      SERVER_URL: 'http://teamcity-server:8111'
     volumes:
-      - ${HOME}/tmp/teamcity/agent/data/conf:/data/teamcity_agent/conf 
+      - ${HOME}/tmp/teamcity/agent/data/conf:/data/teamcity_agent/conf
     networks:
       teamcity-network:
         aliases:
           - teamcity-agent
-          
+
 networks:
   teamcity-network:
